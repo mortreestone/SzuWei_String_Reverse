@@ -5,6 +5,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include "expression1/expression1.h"
 
 
 using namespace std;
@@ -85,7 +86,23 @@ int main(int arg, char **argv)
 
 
 
-    cout <<"Input String: " <<str_input << "\n";
+    //cout <<"Input String: " <<str_input << "\n";
+
+    /////////////////////implementing each expression of the string reversal/////////////////
+
+    /////////Expression1/////////
+    
+    string str_output;
+
+    reverse_string1(str_input,str_output);
+
+    //Print the input and the output string
+    cout <<"\nThe first expression input: " <<str_input << "\n";
+    cout <<"The first expression output: " <<str_output << "\n";
+    
+
+
+
      return 0;
 
 }
