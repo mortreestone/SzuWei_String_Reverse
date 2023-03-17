@@ -8,6 +8,7 @@
 #include "expression1/expression1.h"
 #include "expression2/expression2.h"
 #include "expression3/expression3.h"
+#include "expression4/expression4.h"
 
 
 using namespace std;
@@ -210,6 +211,19 @@ int main(int arg, char **argv)
 
 
 
+
+
+    ////////Expression4/////////
+    if(!individual || n==4){
+
+    //call the fourth expression function implementing lambda
+    str_outputs[3]= reverse_string4(str_inputs[3]);
+
+    //Print the input and the output string
+    cout <<"\nThe first expression input: " <<str_inputs[3] << "\n";
+    cout <<"The fourth expression output: " <<str_outputs[3] << "\n";
+    
+    }
 
      return 0;
 

@@ -4,5 +4,5 @@ The third expression of the string reverse is implemented by a overload operator
 
 
 ## Files
-* [expression3.h](./expression3.h) : The header file for the first expression of the string reversal. 
-* [expression3.cpp](./expression3.cpp) : Main code for first expression of the string reversal. 
+* [expression3.h](./expression3.h) : The header file for the third expression of the string reversal. 
+* [expression3.cpp](./expression3.cpp) : Main code for third expression of the string reversal. 
