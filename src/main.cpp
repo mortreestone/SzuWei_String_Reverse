@@ -16,6 +16,24 @@ using namespace std;
 
 
 
+
+/*
+This is the main function for running 5 different string reversal expressions. 
+The user can enter input strings while running the program or provide a input text file.
+The user can use different arguements to select different executions and also return the execute time. 
+Each expression of string reversal shown below:
+
+1st Expression: A simple function.
+2nd Expression: Class memeber function.
+3rd Expression: Overloaded operator.
+4th Expression: Lumbda Function
+5th Expression: A recursive function
+
+The the result of the reversed string will be shown on the command line and store in the output text file.
+
+*/
+
+
 int main(int arg, char **argv)
 {
 

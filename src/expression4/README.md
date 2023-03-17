@@ -1,6 +1,6 @@
 ## Fourth expression of the string reversal: Lambda Function.
 
-The fourth expression of the string reverse is implemented by using lambda anonymous function. In the revers_string function, it calls transform() function that take two strings. Using lamdba function to store the input string element backwardly to the output string. The reverse string will retrun in the end. 
+The fourth expression of the string reverse is implemented by using lambda anonymous function. In the revers_string function, it calls transform() function that take two strings. Using lamdba function to store the input string element backwardly to the output string. The reverse string will return in the end. 
 
 
 ## Files

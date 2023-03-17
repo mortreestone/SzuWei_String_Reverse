@@ -9,7 +9,7 @@ This program generates a executable file that will run 5 different string revers
 * 2nd Expression: Class memeber function.
 * 3rd Expression: Overloaded operator. 
 * 4th Expression: Lumbda Function
-* 5th Expression: A recursive function 
+* 5th Expression: A Recursive Function 
 
 The the result of the reversed string will be shown on the command line and store in the output text file.
 
@@ -47,7 +47,7 @@ cd build
 make
 ```
 
-* To rune the string reversal, enter this command line in the build repository:
+* To run the string reversal, enter this command line in the build repository:
 
 ```sh
 ./src/String_Reverse
@@ -86,7 +86,7 @@ Type the input string for first expression string reversal:
 
 
 ### Help
-* The terminal will provide help instructions whe run with this arguement:
+* The terminal will provide help instructions when run with this arguement:
  ```sh
 ./src/String_Reverse -h
 ```
