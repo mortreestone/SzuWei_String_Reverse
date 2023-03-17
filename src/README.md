@@ -7,4 +7,5 @@
 * [expression2](./expression2) : Source for the second expression of the string reversal. 
 * [expression3](./expression3) : Source for the third expression of the string reversal. 
 * [expression4](./expression4) : Source for the fourth expression of the string reversal. 
+* [expression5](./expression5) : Source for the fifth expression of the string reversal. 
 * [CMakeLists.txt](./CMakeLists.txt): CMake file for building the project. 

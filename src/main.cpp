@@ -9,7 +9,7 @@
 #include "expression2/expression2.h"
 #include "expression3/expression3.h"
 #include "expression4/expression4.h"
-
+#include "expression5/expression5.h"
 
 using namespace std;
 
@@ -62,7 +62,7 @@ int main(int arg, char **argv)
 
 
     //If the expression number cannot match, return 
-    if(n>3 || n<0)
+    if(n>5 || n<0)
     {
         cout<< "Sorry, there is no expression " << n << " yet to implement the string reversal.\n";
         return 1;
@@ -97,7 +97,11 @@ int main(int arg, char **argv)
             //read each line for different expression's string input
             while(getline(file, str_inputs[i]))
                     i++;
-
+            if(i<5)
+            {
+                cout<< "Error, the input text file have to contain 5 line \n";  
+                return 1;
+            }
         }
         else
         {
@@ -213,15 +217,29 @@ int main(int arg, char **argv)
 
 
 
-    ////////Expression4/////////
+    /////////////////Expression4//////////////////
     if(!individual || n==4){
 
     //call the fourth expression function implementing lambda
     str_outputs[3]= reverse_string4(str_inputs[3]);
 
     //Print the input and the output string
-    cout <<"\nThe first expression input: " <<str_inputs[3] << "\n";
+    cout <<"\nThe fourth expression input: " <<str_inputs[3] << "\n";
     cout <<"The fourth expression output: " <<str_outputs[3] << "\n";
+    
+    }
+
+
+
+    /////////////////Expression5//////////////////
+    if(!individual || n==5){
+
+    //call the fifth expression implementation using recursive function
+    str_outputs[4]=reverse_string5(str_inputs[4]);
+
+    //Print the input and the output string
+    cout <<"\nThe fifth expression input: " <<str_inputs[4] << "\n";
+    cout <<"The fifth expression output: " <<str_outputs[4] << "\n";
     
     }
 

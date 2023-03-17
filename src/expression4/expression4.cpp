@@ -1,9 +1,10 @@
 #include "expression4.h"
 
 /* 
-The third expression of the string reverse is implemented by using lambda anonymous function.
-The revers_string function calls transform() function that take two strings. One forward and the other one backward.
-Using lamdba function to store the input string element backwardly to the output string. The reverse string will retrun in the end. 
+The fourth expression of the string reverse is implemented by using lambda anonymous function. 
+In the revers_string function, it calls transform() function that take two strings. 
+Using lamdba function to store the input string element backwardly to the output string. 
+The reverse string will retrun in the end. 
 */
 
 
