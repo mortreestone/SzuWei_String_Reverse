@@ -7,6 +7,7 @@
 #include <string>
 #include "expression1/expression1.h"
 #include "expression2/expression2.h"
+#include "expression3/expression3.h"
 
 
 using namespace std;
@@ -60,7 +61,7 @@ int main(int arg, char **argv)
 
 
     //If the expression number cannot match, return 
-    if(n>2 || n<0)
+    if(n>3 || n<0)
     {
         cout<< "Sorry, there is no expression " << n << " yet to implement the string reversal.\n";
         return 1;
@@ -112,22 +113,22 @@ int main(int arg, char **argv)
             cout << "Type the input string for first expression string reversal: ";
             getline (cin, str_inputs[0]);
         }
-        else if(!individual || n==2 )
+        if(!individual || n==2 )
         {
             cout << "Type the input string for second expression string reversal: ";
             getline (cin, str_inputs[1]);
         }
-        else if(!individual || n==3)
+        if(!individual || n==3)
         {
             cout << "Type the input string for third expression string reversal: ";
             getline (cin, str_inputs[2]);
         }
-        else if(!individual || n==4)
+        if(!individual || n==4)
         {
             cout << "Type the input string for fourth expression string reversal: ";
             getline (cin, str_inputs[3]);
         }
-        else if(!individual || n==5)
+        if(!individual || n==5)
         {
             cout << "Type the input string for fifth expression string reversal: ";
             getline (cin, str_inputs[4]);
@@ -156,6 +157,8 @@ int main(int arg, char **argv)
 
 
 
+
+
     /////////////////Expression2///////////////////
     if(!individual || n==2){
 
@@ -175,10 +178,38 @@ int main(int arg, char **argv)
     delete ex2;
 
     //Print the input and the output string
-    cout <<"\nThe first expression input: " <<str_inputs[1] << "\n";
+    cout <<"\nThe second expression input: " <<str_inputs[1] << "\n";
     cout <<"The second expression output: " <<str_outputs[1] << "\n";
 
     }
+
+
+
+
+
+    /////////////////Expression3/////////////////
+    if(!individual || n==3){
+    
+    // get the size of the string
+    int str_size = str_inputs[2].size();
+
+    // Declare an structure using input3
+    mystring ex3 = mystring(str_inputs[2], str_size);
+
+    // running the overloaded operator in ex3
+    ~ex3;
+
+    // get the output
+    str_outputs[2] = ex3.op_string;
+
+
+    //Print the input and the output string
+    cout <<"\nThe third expression input: " <<str_inputs[2] << "\n";
+    cout <<"The third expression output: " <<str_outputs[2] << "\n";
+    }
+
+
+
 
      return 0;
 
