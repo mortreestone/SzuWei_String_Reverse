@@ -3,8 +3,15 @@
 This is the open repository for take home assignment of Utopia Compression interview created by Szu-Wei Lin. The assignment instrouction can be found in [Reverse_a_string.pdf](./Reverse_a_string.pdf). Overall, this project provides 5 different 'expression' of string reversal implementation in C++.
 
 ## Overview
+This program generates a executable file that will run 5 different string reversal expressions. The user can enter input strings while running the program or provide a input text file. Each expression of string reversal shown below: 
 
+* 1st Expression: A simple function. 
+* 2nd Expression: Class memeber function.
+* 3rd Expression: Overloaded operator. 
+* 4th Expression: Lumbda Function
+* 5th Expression: A recursive function 
 
+The the result of the reversed string will be shown on the command line and store in the output text file.
 
 
 ## Files and Repository
@@ -56,7 +63,7 @@ make
 Type the input string for first expression string reversal: 
 ```
 
-### Input Text File (Option)
+### Input Text File (Optional)
 * The user can also provide a text file which store the input string. An example text file can be found at [string_data_input/String.txt](./string_data_input/String.txt). The user can run this command to use this text file as an input:
  ```sh
 ./src/String_Reverse ../string_data_input/String.txt
@@ -78,4 +85,4 @@ Type the input string for first expression string reversal:
 ## Output 
 
 * The results of the string reversal will be show on the command line after running the program. 
-* The results of the string reversal will also be stored in the outputs text file [outputs,txt](./outputs/ouputs.txt)
+* The results of the string reversal will also be stored in the outputs text file [outputs.txt](./outputs/ouputs.txt)
