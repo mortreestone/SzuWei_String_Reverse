@@ -243,6 +243,12 @@ int main(int arg, char **argv)
     
     }
 
-     return 0;
+    // Store each result in each line of the outputs text file 
+    ofstream newFile("../outputs/ouputs.txt");
+    newFile <<str_outputs[0] << "\n"<<str_outputs[1] << "\n"<<str_outputs[2] << "\n"<<str_outputs[3] << "\n"<<str_outputs[4] << "\n";
+    newFile.close();
+
+
+    return 0;
 
 }

@@ -8,9 +8,10 @@ This is the open repository for take home assignment of Utopia Compression inter
 
 
 ## Files and Repository
-* [src](./src) : Ropository of the source codes.
-* [build](./build) : Reopository for building the project in cmake. 
-* [string_data_input](./string_data_input) : Ropository for an example string input text file. 
+* [src](./src) : Repository of the source codes.
+* [build](./build) : Repository for building the project in cmake. 
+* [string_data_input](./string_data_input) : Repository for an example string input text file. 
+* [outputs](./outputs/) : Repository of the outputs text file.
 * [CMakeLists.txt](./CMakeLists.txt): CMake file for building the project. 
 * [Reverse_a_string.pdf](./Reverse_a_string.pdf): The instrunction file.
 
@@ -74,3 +75,7 @@ Type the input string for first expression string reversal:
  ```sh
 ./src/String_Reverse -h
 ```
+## Output 
+
+* The results of the string reversal will be show on the command line after running the program. 
+* The results of the string reversal will also be stored in the outputs text file [outputs,txt](./outputs/ouputs.txt)
