@@ -1,4 +1,4 @@
-## Third expression of the string reversal: Overloaded Operator.
+## Fourth expression of the string reversal: Lambda Function.
 
 The third expression of the string reverse is implemented by using lambda anonymous function. The revers_string function calls transform() function that take two strings. One forward and the other one backward. Using lamdba function to store the input string element backwardly to the output string. The reverse string will retrun in the end. 
 
