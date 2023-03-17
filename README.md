@@ -45,7 +45,7 @@ make
 ./src/String_Reverse
 ```
 
-## Input Aurguements/Paramenters
+## Input Aurguments/Paramenters
 
 
 ### Input
@@ -61,6 +61,13 @@ Type the input string for first expression string reversal:
 ./src/String_Reverse ../string_data_input/String.txt
 ```
 
+### Run only one Implementation
+
+* The user can add a argument -e to implement only one specific expression of the string reversal. For example, to only run the second expression implementation of the string reversal, user can run the command line below: 
+
+ ```sh
+./src/String_Reverse -e 2
+```
 
 ### Help
 * The terminal will provide help instructions whe run with this arguement:
