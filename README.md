@@ -1,4 +1,4 @@
-# Szu-Wei Lin Take Home Assignment - String Reverse
+# Szu-Wei Lin Take Home Assignment - String Reverse in C++
 
 This is the open repository for take home assignment of Utopia Compression interview created by Szu-Wei Lin. The assignment instrouction can be found in [Reverse_a_string.pdf](./Reverse_a_string.pdf). Overall, this project provides 5 different 'expression' of string reversal implementation in C++.
 
@@ -76,6 +76,14 @@ Type the input string for first expression string reversal:
  ```sh
 ./src/String_Reverse -e 2
 ```
+
+### Show Execute Time
+* The user can add a argument -t to print the execute time of each expression of the string reversal. The command line shown below:
+
+ ```sh
+./src/String_Reverse -t 2
+```
+
 
 ### Help
 * The terminal will provide help instructions whe run with this arguement:

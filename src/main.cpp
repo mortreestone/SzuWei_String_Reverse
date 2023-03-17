@@ -10,6 +10,7 @@
 #include "expression3/expression3.h"
 #include "expression4/expression4.h"
 #include "expression5/expression5.h"
+#include <time.h>
 
 using namespace std;
 
@@ -18,10 +19,14 @@ using namespace std;
 int main(int arg, char **argv)
 {
 
+    // time variable
+    clock_t  t1,  t2;
+
     // flags for the input
     bool take_file=false; // see if the user provide a text file or not
     bool individual=false; // see if the user want to run the expression individually or all at a one.
-    
+    bool performance =false; // see if the user want to print out the performance of each implementation.
+
     // file name
     char *f;
 
@@ -37,7 +42,7 @@ int main(int arg, char **argv)
 
     // Get optinal arguments including e for expression number and -h for help.
     int opt;
-    while ((opt = getopt(arg, argv, "e:h")) != -1) {
+    while ((opt = getopt(arg, argv, "e:th")) != -1) {
     switch (opt) {
     case 'e':
       //set to only run a expression 
@@ -48,12 +53,16 @@ int main(int arg, char **argv)
       n = atoi(t);
 
       break;
-
+    case 't':
+     // set performance true
+     performance =true;
+      break;  
     // help arguement
     case 'h':
-      cout<<"* Enter -h for help.\n\n";
+      cout<<"* Enter -h for help.\n\n";    
       cout<<"* Enter -e and a number for executing a specific expression individually. \n  For example: Enter -e 2 will only execute the second expression of string reversal\n\n";
       cout<<"* You can also optinally Enter a text file which store all your input strings for each expression line by line. \n  For example: Enter ../string_data_input/String.txt\n\n";
+      cout<<"* Enter -t to show the performance (executed time) for each string reversal implementation.\n\n";      
       cout<<"* By default, it executes all different expression of string reversal implementations at once.\n";
       return 1;
       break;
@@ -151,12 +160,21 @@ int main(int arg, char **argv)
     //////////////////Expression1//////////////////
     if(!individual || n==1){
     
+    //start time
+    t1 = clock();
+
     //call the function
     reverse_string1(str_inputs[0],str_outputs[0]);
+
+    //end time
+    t2 =clock();
 
     //Print the input and the output string
     cout <<"\nThe first expression input: " <<str_inputs[0] << "\n";
     cout <<"The first expression output: " <<str_outputs[0] << "\n";
+
+    //print the execute time
+    printf("First expression execute time : %f us\n", (((double) (t2 - t1))/(CLOCKS_PER_SEC/1000000) ));
     
     }
 
@@ -166,6 +184,10 @@ int main(int arg, char **argv)
 
     /////////////////Expression2///////////////////
     if(!individual || n==2){
+
+
+    //start time
+    t1 = clock();
 
     // get the size of the string
     int str_size = str_inputs[1].size();
@@ -182,9 +204,17 @@ int main(int arg, char **argv)
     //delete the class
     delete ex2;
 
+    //end time
+    t2 =clock();
+
     //Print the input and the output string
     cout <<"\nThe second expression input: " <<str_inputs[1] << "\n";
     cout <<"The second expression output: " <<str_outputs[1] << "\n";
+
+    //print the execute time
+    if(performance)
+        printf("Second expression execute time : : %f us\n", (((double) (t2 - t1))/(CLOCKS_PER_SEC/1000000) ));
+    
 
     }
 
@@ -195,6 +225,10 @@ int main(int arg, char **argv)
     /////////////////Expression3/////////////////
     if(!individual || n==3){
     
+
+    //start time
+    t1 = clock();
+
     // get the size of the string
     int str_size = str_inputs[2].size();
 
@@ -207,10 +241,17 @@ int main(int arg, char **argv)
     // get the output
     str_outputs[2] = ex3.op_string;
 
+    //end time
+    t2 =clock();
 
     //Print the input and the output string
     cout <<"\nThe third expression input: " <<str_inputs[2] << "\n";
     cout <<"The third expression output: " <<str_outputs[2] << "\n";
+
+    //print the execute time
+    if(performance)
+        printf("Third expression execute time : : %f us\n", (((double) (t2 - t1))/(CLOCKS_PER_SEC/1000000) ));
+    
     }
 
 
@@ -220,12 +261,23 @@ int main(int arg, char **argv)
     /////////////////Expression4//////////////////
     if(!individual || n==4){
 
+    //start time
+    t1 = clock();
+
     //call the fourth expression function implementing lambda
     str_outputs[3]= reverse_string4(str_inputs[3]);
+
+    //end time
+    t2 =clock();
 
     //Print the input and the output string
     cout <<"\nThe fourth expression input: " <<str_inputs[3] << "\n";
     cout <<"The fourth expression output: " <<str_outputs[3] << "\n";
+
+    //print the execute time
+    if(performance)
+        printf("Fourth expression execute time : : %f us\n", (((double) (t2 - t1))/(CLOCKS_PER_SEC/1000000) ));
+    
     
     }
 
@@ -234,12 +286,23 @@ int main(int arg, char **argv)
     /////////////////Expression5//////////////////
     if(!individual || n==5){
 
+    //start time
+    t1 = clock();
+
     //call the fifth expression implementation using recursive function
     str_outputs[4]=reverse_string5(str_inputs[4]);
+
+    //end time
+    t2 =clock();
 
     //Print the input and the output string
     cout <<"\nThe fifth expression input: " <<str_inputs[4] << "\n";
     cout <<"The fifth expression output: " <<str_outputs[4] << "\n";
+    
+    //print the execute time
+    if(performance)
+        printf("Fifth expression execute time : %f us\n", ((double)(t2-t1))/(CLOCKS_PER_SEC/1000000) );
+    
     
     }
 
