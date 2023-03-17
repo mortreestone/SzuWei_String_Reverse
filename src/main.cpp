@@ -174,7 +174,8 @@ int main(int arg, char **argv)
     cout <<"The first expression output: " <<str_outputs[0] << "\n";
 
     //print the execute time
-    printf("First expression execute time : %f us\n", (((double) (t2 - t1))/(CLOCKS_PER_SEC/1000000) ));
+    if(performance)
+        printf("First expression execute time : %f us\n", (((double) (t2 - t1))/(CLOCKS_PER_SEC/1000000) ));
     
     }
 
